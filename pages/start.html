@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start</title>
+    <link rel="stylesheet" href="../css/style-start.css">
+    <script src="../js/jquery/jquery-3.5.1.js"></script>
+    <script src="https://use.fontawesome.com/2b65062453.js"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/favicon-16x16.png">
+    <link rel="manifest" href="../images/site.webmanifest">
+</head>
+
+<body>
+    <div class="message">
+        <h1>You gotta be ready for the Quiz?</h1>
+        <ul>
+            <li>The quiz is divided into  10 MCQ questions.</li>
+            <li>Each question have only one answer</li>
+            <li>The duration for  and the duration is only 2 and half minutes <em>(150 seconds)</em></li>
+        </ul>
+        <p><span>Click the <b> "Start" </b> button to begin</span> </p>
+    </div>
+    <div class="center">
+        <button class="btnStart">Start</button>
+    </div>
+</body>
+<script>
+    var btn = document.getElementsByTagName("button")[0];
+    btn.addEventListener("click", function () {
+        window.location.replace("quiz.html");
+    })
+    var animate = setTimeout(function () {
+        $(".btnStart").fadeIn("slow")
+    }, 1000)
+</script>
+
+</html>
